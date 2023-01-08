@@ -1,0 +1,18 @@
+https://start.spring.io/
+
+00_00_start_project.png
+
+Gradle - Groovy
+Java
+2.7.7
+com.example
+loginRSA
+loginRSA
+loginRSA project for Spring Boot
+com.example.loginRSA
+Jar
+8
+
+Spring Web
+Spring Security
+Lombok
