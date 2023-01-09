@@ -1,0 +1,9 @@
+@BaseURL = http://localhost:8080
+
+### TEST login success if id(18)
+POST {{BaseURL}}/api/v1/login HTTP/1.1
+content-Type: application/json
+
+{
+    "id": 181
+}

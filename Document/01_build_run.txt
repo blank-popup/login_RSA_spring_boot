@@ -1,0 +1,58 @@
+BIULD
+.\gradlew.bat build
+.\gradlew.bat clean
+
+RUN
+java -jar .\loginRSA-0.0.1-SNAPSHOT.jar
+
+
+PS D:\WorkSpace\loginRSA> .\gradlew.bat build
+
+BUILD SUCCESSFUL in 19s
+7 actionable tasks: 7 executed
+PS D:\WorkSpace\loginRSA> cd .\build\
+PS D:\WorkSpace\loginRSA\build> cd .\libs\
+PS D:\WorkSpace\loginRSA\build\libs> java -jar .\loginRSA-0.0.1-SNAPSHOT.jar
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.7)
+
+2023-01-10 01:46:48.772  INFO 21256 --- [           main] c.example.loginRSA.LoginRsaApplication   : Starting LoginRsaApplication using Java 1.8.0_332 on DESKTOP-6OIME65 with PID 21256 (D:\WorkSpace\loginRSA\build\libs\loginRSA-0.0.1-SNAPSHOT.jar started by Mary in D:\WorkSpace\loginRSA\build\libs)
+2023-01-10 01:46:48.772  INFO 21256 --- [           main] c.example.loginRSA.LoginRsaApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-10 01:46:51.937  INFO 21256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-10 01:46:51.953  INFO 21256 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-10 01:46:51.968  INFO 21256 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-10 01:46:52.110  INFO 21256 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-10 01:46:52.110  INFO 21256 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3229 ms
+2023-01-10 01:46:52.314  WARN 21256 --- [           main] .s.s.UserDetailsServiceAutoConfiguration :
+
+Using generated security password: 1aeb809e-7bdd-445a-9a36-252938ed28bb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-01-10 01:46:52.534  INFO 21256 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31368b99
+, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1725dc0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b0b0854, org.springframework
+.security.web.header.HeaderWriterFilter@5a63f509, org.springframework.security.web.authentication.logout.LogoutFilter@64cd705f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10e41
+621, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2667f029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3911c2a7, org.springframew
+ork.security.web.session.SessionManagementFilter@34b7ac2f, org.springframework.security.web.access.ExceptionTranslationFilter@5bd03f44, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1817d444]
+2023-01-10 01:46:53.211  INFO 21256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-10 01:46:53.224  INFO 21256 --- [           main] c.example.loginRSA.LoginRsaApplication   : Started LoginRsaApplication in 5.243 seconds (JVM running for 6.119)
+2023-01-10 01:47:04.669  INFO 21256 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-10 01:47:04.670  INFO 21256 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-10 01:47:04.672  INFO 21256 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-10 01:47:04.877  INFO 21256 --- [nio-8080-exec-1] com.example.loginRSA.login.controller    : $$$$$ RestController info login start
+2023-01-10 01:47:04.877  WARN 21256 --- [nio-8080-exec-1] com.example.loginRSA.login.controller    : $$$$$ RestController warn login start
+2023-01-10 01:47:04.877 ERROR 21256 --- [nio-8080-exec-1] com.example.loginRSA.login.controller    : $$$$$ RestController error login start
+2023-01-10 01:47:04.877  INFO 21256 --- [nio-8080-exec-1] com.example.loginRSA.login.controller    : $$$$$ RestController login fialure
+PS D:\WorkSpace\loginRSA\build\libs> cd ..
+PS D:\WorkSpace\loginRSA\build> cd ..
+PS D:\WorkSpace\loginRSA> .\gradlew.bat clean
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 executed
+PS D:\WorkSpace\loginRSA>
