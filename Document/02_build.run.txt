@@ -1,0 +1,11 @@
+BIULD
+.\gradlew.bat build
+.\gradlew.bat clean
+.\gradlew.bat clean build
+
+RUN in command
+java -jar .\loginRSA-0.0.1-SNAPSHOT.jar
+java -jar .\loginRSA-0.0.1-SNAPSHOT.jar --spring.profiles.active=local
+java -jar -Dspring.profiles.active=local .\loginRSA-0.0.1-SNAPSHOT.jar
+RUN in Power Shell
+java -jar "-Dspring.profiles.active=local" .\loginRSA-0.0.1-SNAPSHOT.jar
