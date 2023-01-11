@@ -1,5 +1,7 @@
 server:
   port: 28888
+  servlet:
+    contextPath: /local
 
 str:
   individual: "Individual local"

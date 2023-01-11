@@ -27,11 +27,12 @@ public class controller {
         if (modelUser.getId() == 18) {
             log.info("$$$$$ RestController login success");
             modelUser.setName("ImPossible");
+            return ResponseEntity.status(HttpStatus.OK).body(modelUser);
         }
         else {
             log.warn("$$$$$ RestController login fialure");
             modelUser.setName("ImnotUser");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(modelUser);
         }
-        return ResponseEntity.status(HttpStatus.OK).body(modelUser);
     }
 }
